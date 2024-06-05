@@ -1,0 +1,39 @@
+name: Deploy FastAPI Backend to Google Cloud Run
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.0
+        with:
+          version: 'latest'
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          project_id: tensile-stack-425502-c6
+
+      - name: Authenticate Docker with GCR
+        run: |
+          echo ${{ secrets.GCP_SA_KEY }} | docker login -u _json_key --password-stdin https://gcr.io
+
+      - name: Build Docker image
+        run: docker build -t gcr.io/tensile-stack-425502-c6/reformatit-backend:latest .
+
+      - name: Push Docker image to GCR
+        run: docker push gcr.io/tensile-stack-425502-c6/reformatit-backend:latest
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy reformatit-backend \
+            --image gcr.io/tensile-stack-425502-c6/reformatit-backend:latest \
+            --platform managed \
+            --region us-west4 \
+            --allow-unauthenticated

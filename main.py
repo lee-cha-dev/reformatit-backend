@@ -130,12 +130,14 @@ async def startup_event():
     asyncio.create_task(periodic_cleanup())
 
 
-# @app.post("/test/")
-# @limiter.limit("10/minute")
-# async def test(request: Request):
-#     print(f"Testing {request.url}")
-#     response_data = {"message": "This is a test response", "url": str(request.url)}
-#     return JSONResponse(content=response_data)
+@app.post("/test/")
+@app.get("/test/")
+@limiter.limit("10/minute")
+async def test(request: Request):
+    print(f"Testing {request.url}")
+    response_data = {"message": "This is a test response", "url": str(request.url)}
+    return JSONResponse(content=response_data)
+
 
 
 @app.post("/convert/")
@@ -197,4 +199,4 @@ async def convert_image(request: Request, file: UploadFile = File(...), convert_
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
