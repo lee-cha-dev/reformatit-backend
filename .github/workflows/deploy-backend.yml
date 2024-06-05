@@ -34,5 +34,6 @@ jobs:
           gcloud run deploy reformatit-backend \
             --image gcr.io/tensile-stack-425502-c6/reformatit-backend:latest \
             --platform managed \
-            --region us-west4 \
+            --region us-central1 \
             --allow-unauthenticated
+          
