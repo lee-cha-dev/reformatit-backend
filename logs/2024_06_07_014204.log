@@ -1,0 +1,8 @@
+2024-06-07 01:42:07,243 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:42:07,377 - main - INFO - Image converted successfully. Image converted from BMP to GIF
+2024-06-07 01:42:07,377 - main - INFO - File successfully saved at: temp_images/test_07420107062024.gif
+2024-06-07 01:42:07,379 - main - INFO - Response status: 200
+2024-06-07 01:42:07,417 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:42:07,635 - main - INFO - Image converted successfully. Image converted from BMP to HEIF
+2024-06-07 01:42:07,635 - main - INFO - File successfully saved at: temp_images/test_07420107062024.heif
+2024-06-07 01:42:07,641 - main - INFO - Response status: 200

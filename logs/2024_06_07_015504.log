@@ -1,0 +1,528 @@
+2024-06-07 01:55:07,787 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:07,925 - main - INFO - Image converted successfully. Image converted from BMP to GIF
+2024-06-07 01:55:07,925 - main - INFO - File successfully saved at: temp_images/test_07550107062024.gif
+2024-06-07 01:55:07,927 - main - INFO - Response status: 200
+2024-06-07 01:55:07,965 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,042 - main - INFO - Image converted successfully. Image converted from BMP to ICO
+2024-06-07 01:55:08,042 - main - INFO - File successfully saved at: temp_images/test_07550107062024.ico
+2024-06-07 01:55:08,044 - main - INFO - Response status: 200
+2024-06-07 01:55:08,081 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,100 - main - INFO - Image converted successfully. Image converted from BMP to JPEG
+2024-06-07 01:55:08,100 - main - INFO - File successfully saved at: temp_images/test_08550107062024.jpeg
+2024-06-07 01:55:08,102 - main - INFO - Response status: 200
+2024-06-07 01:55:08,120 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,138 - main - INFO - Image converted successfully. Image converted from BMP to JPEG
+2024-06-07 01:55:08,138 - main - INFO - File successfully saved at: temp_images/test_08550107062024.jpeg
+2024-06-07 01:55:08,140 - main - INFO - Response status: 200
+2024-06-07 01:55:08,156 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,189 - main - INFO - Image converted successfully. Image converted from BMP to PCX
+2024-06-07 01:55:08,190 - main - INFO - File successfully saved at: temp_images/test_08550107062024.pcx
+2024-06-07 01:55:08,191 - main - INFO - Response status: 200
+2024-06-07 01:55:08,241 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,357 - main - INFO - Image converted successfully. Image converted from BMP to PNG
+2024-06-07 01:55:08,357 - main - INFO - File successfully saved at: temp_images/test_08550107062024.png
+2024-06-07 01:55:08,359 - main - INFO - Response status: 200
+2024-06-07 01:55:08,505 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,539 - main - INFO - Image converted successfully. Image converted from BMP to PPM
+2024-06-07 01:55:08,540 - main - INFO - File successfully saved at: temp_images/test_08550107062024.ppm
+2024-06-07 01:55:08,541 - main - INFO - Response status: 200
+2024-06-07 01:55:08,573 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,607 - main - INFO - Image converted successfully. Image converted from BMP to SGI
+2024-06-07 01:55:08,607 - main - INFO - File successfully saved at: temp_images/test_08550107062024.sgi
+2024-06-07 01:55:08,609 - main - INFO - Response status: 200
+2024-06-07 01:55:08,649 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,684 - main - INFO - Image converted successfully. Image converted from BMP to TIFF
+2024-06-07 01:55:08,684 - main - INFO - File successfully saved at: temp_images/test_08550107062024.tiff
+2024-06-07 01:55:08,685 - main - INFO - Response status: 200
+2024-06-07 01:55:08,731 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,766 - main - INFO - Image converted successfully. Image converted from BMP to TIFF
+2024-06-07 01:55:08,766 - main - INFO - File successfully saved at: temp_images/test_08550107062024.tiff
+2024-06-07 01:55:08,767 - main - INFO - Response status: 200
+2024-06-07 01:55:08,811 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,868 - main - INFO - Image converted successfully. Image converted from BMP to WEBP
+2024-06-07 01:55:08,868 - main - INFO - File successfully saved at: temp_images/test_08550107062024.webp
+2024-06-07 01:55:08,869 - main - INFO - Response status: 200
+2024-06-07 01:55:08,937 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,941 - main - INFO - Image converted successfully. Image converted from GIF to BMP
+2024-06-07 01:55:08,941 - main - INFO - File successfully saved at: temp_images/test_08550107062024.bmp
+2024-06-07 01:55:08,941 - main - INFO - Response status: 200
+2024-06-07 01:55:08,947 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,959 - main - INFO - Image converted successfully. Image converted from GIF to ICO
+2024-06-07 01:55:08,959 - main - INFO - File successfully saved at: temp_images/test_08550107062024.ico
+2024-06-07 01:55:08,960 - main - INFO - Response status: 200
+2024-06-07 01:55:08,971 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,973 - main - INFO - Image converted successfully. Image converted from GIF to JPEG
+2024-06-07 01:55:08,973 - main - INFO - File successfully saved at: temp_images/test_08550107062024.jpeg
+2024-06-07 01:55:08,973 - main - INFO - Response status: 200
+2024-06-07 01:55:08,976 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,978 - main - INFO - Image converted successfully. Image converted from GIF to JPEG
+2024-06-07 01:55:08,978 - main - INFO - File successfully saved at: temp_images/test_08550107062024.jpeg
+2024-06-07 01:55:08,978 - main - INFO - Response status: 200
+2024-06-07 01:55:08,981 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,984 - main - INFO - Image converted successfully. Image converted from GIF to PCX
+2024-06-07 01:55:08,984 - main - INFO - File successfully saved at: temp_images/test_08550107062024.pcx
+2024-06-07 01:55:08,984 - main - INFO - Response status: 200
+2024-06-07 01:55:08,988 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:08,993 - main - INFO - Image converted successfully. Image converted from GIF to PNG
+2024-06-07 01:55:08,993 - main - INFO - File successfully saved at: temp_images/test_08550107062024.png
+2024-06-07 01:55:08,993 - main - INFO - Response status: 200
+2024-06-07 01:55:09,000 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,004 - main - INFO - Image converted successfully. Image converted from GIF to PPM
+2024-06-07 01:55:09,004 - main - INFO - File successfully saved at: temp_images/test_09550107062024.ppm
+2024-06-07 01:55:09,004 - main - INFO - Response status: 200
+2024-06-07 01:55:09,009 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,013 - main - INFO - Image converted successfully. Image converted from GIF to SGI
+2024-06-07 01:55:09,013 - main - INFO - File successfully saved at: temp_images/test_09550107062024.sgi
+2024-06-07 01:55:09,013 - main - INFO - Response status: 200
+2024-06-07 01:55:09,019 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,022 - main - INFO - Image converted successfully. Image converted from GIF to TIFF
+2024-06-07 01:55:09,022 - main - INFO - File successfully saved at: temp_images/test_09550107062024.tiff
+2024-06-07 01:55:09,023 - main - INFO - Response status: 200
+2024-06-07 01:55:09,028 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,032 - main - INFO - Image converted successfully. Image converted from GIF to TIFF
+2024-06-07 01:55:09,032 - main - INFO - File successfully saved at: temp_images/test_09550107062024.tiff
+2024-06-07 01:55:09,032 - main - INFO - Response status: 200
+2024-06-07 01:55:09,037 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,043 - main - INFO - Image converted successfully. Image converted from GIF to WEBP
+2024-06-07 01:55:09,043 - main - INFO - File successfully saved at: temp_images/test_09550107062024.webp
+2024-06-07 01:55:09,044 - main - INFO - Response status: 200
+2024-06-07 01:55:09,051 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,052 - main - INFO - Image converted successfully. Image converted from ICO to BMP
+2024-06-07 01:55:09,053 - main - INFO - File successfully saved at: temp_images/test_09550107062024.bmp
+2024-06-07 01:55:09,053 - main - INFO - Response status: 200
+2024-06-07 01:55:09,055 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,062 - main - INFO - Image converted successfully. Image converted from ICO to GIF
+2024-06-07 01:55:09,063 - main - INFO - File successfully saved at: temp_images/test_09550107062024.gif
+2024-06-07 01:55:09,063 - main - INFO - Response status: 200
+2024-06-07 01:55:09,065 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,067 - main - INFO - Image converted successfully. Image converted from ICO to JPEG
+2024-06-07 01:55:09,067 - main - INFO - File successfully saved at: temp_images/test_09550107062024.jpeg
+2024-06-07 01:55:09,067 - main - INFO - Response status: 200
+2024-06-07 01:55:09,069 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,071 - main - INFO - Image converted successfully. Image converted from ICO to JPEG
+2024-06-07 01:55:09,071 - main - INFO - File successfully saved at: temp_images/test_09550107062024.jpeg
+2024-06-07 01:55:09,071 - main - INFO - Response status: 200
+2024-06-07 01:55:09,073 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,075 - main - INFO - Image converted successfully. Image converted from ICO to PCX
+2024-06-07 01:55:09,075 - main - INFO - File successfully saved at: temp_images/test_09550107062024.pcx
+2024-06-07 01:55:09,075 - main - INFO - Response status: 200
+2024-06-07 01:55:09,078 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,081 - main - INFO - Image converted successfully. Image converted from ICO to PNG
+2024-06-07 01:55:09,081 - main - INFO - File successfully saved at: temp_images/test_09550107062024.png
+2024-06-07 01:55:09,081 - main - INFO - Response status: 200
+2024-06-07 01:55:09,085 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,087 - main - INFO - Image converted successfully. Image converted from ICO to PPM
+2024-06-07 01:55:09,087 - main - INFO - File successfully saved at: temp_images/test_09550107062024.ppm
+2024-06-07 01:55:09,087 - main - INFO - Response status: 200
+2024-06-07 01:55:09,089 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,091 - main - INFO - Image converted successfully. Image converted from ICO to SGI
+2024-06-07 01:55:09,091 - main - INFO - File successfully saved at: temp_images/test_09550107062024.sgi
+2024-06-07 01:55:09,091 - main - INFO - Response status: 200
+2024-06-07 01:55:09,094 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,096 - main - INFO - Image converted successfully. Image converted from ICO to TIFF
+2024-06-07 01:55:09,096 - main - INFO - File successfully saved at: temp_images/test_09550107062024.tiff
+2024-06-07 01:55:09,096 - main - INFO - Response status: 200
+2024-06-07 01:55:09,099 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,100 - main - INFO - Image converted successfully. Image converted from ICO to TIFF
+2024-06-07 01:55:09,101 - main - INFO - File successfully saved at: temp_images/test_09550107062024.tiff
+2024-06-07 01:55:09,101 - main - INFO - Response status: 200
+2024-06-07 01:55:09,103 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,106 - main - INFO - Image converted successfully. Image converted from ICO to WEBP
+2024-06-07 01:55:09,106 - main - INFO - File successfully saved at: temp_images/test_09550107062024.webp
+2024-06-07 01:55:09,106 - main - INFO - Response status: 200
+2024-06-07 01:55:09,109 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,130 - main - INFO - Image converted successfully. Image converted from JPEG to BMP
+2024-06-07 01:55:09,130 - main - INFO - File successfully saved at: temp_images/test_09550107062024.bmp
+2024-06-07 01:55:09,131 - main - INFO - Response status: 200
+2024-06-07 01:55:09,162 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,236 - main - INFO - Image converted successfully. Image converted from JPEG to GIF
+2024-06-07 01:55:09,236 - main - INFO - File successfully saved at: temp_images/test_09550107062024.gif
+2024-06-07 01:55:09,237 - main - INFO - Response status: 200
+2024-06-07 01:55:09,253 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,301 - main - INFO - Image converted successfully. Image converted from JPEG to ICO
+2024-06-07 01:55:09,301 - main - INFO - File successfully saved at: temp_images/test_09550107062024.ico
+2024-06-07 01:55:09,302 - main - INFO - Response status: 200
+2024-06-07 01:55:09,310 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,317 - main - INFO - Image converted successfully. Image converted from JPEG to JPEG
+2024-06-07 01:55:09,318 - main - INFO - File successfully saved at: temp_images/test_09550107062024.jpeg
+2024-06-07 01:55:09,318 - main - INFO - Response status: 200
+2024-06-07 01:55:09,328 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,342 - main - INFO - Image converted successfully. Image converted from JPEG to PCX
+2024-06-07 01:55:09,342 - main - INFO - File successfully saved at: temp_images/test_09550107062024.pcx
+2024-06-07 01:55:09,343 - main - INFO - Response status: 200
+2024-06-07 01:55:09,369 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,414 - main - INFO - Image converted successfully. Image converted from JPEG to PNG
+2024-06-07 01:55:09,414 - main - INFO - File successfully saved at: temp_images/test_09550107062024.png
+2024-06-07 01:55:09,414 - main - INFO - Response status: 200
+2024-06-07 01:55:09,485 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,507 - main - INFO - Image converted successfully. Image converted from JPEG to PPM
+2024-06-07 01:55:09,507 - main - INFO - File successfully saved at: temp_images/test_09550107062024.ppm
+2024-06-07 01:55:09,507 - main - INFO - Response status: 200
+2024-06-07 01:55:09,537 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,557 - main - INFO - Image converted successfully. Image converted from JPEG to SGI
+2024-06-07 01:55:09,557 - main - INFO - File successfully saved at: temp_images/test_09550107062024.sgi
+2024-06-07 01:55:09,557 - main - INFO - Response status: 200
+2024-06-07 01:55:09,587 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,610 - main - INFO - Image converted successfully. Image converted from JPEG to TIFF
+2024-06-07 01:55:09,611 - main - INFO - File successfully saved at: temp_images/test_09550107062024.tiff
+2024-06-07 01:55:09,611 - main - INFO - Response status: 200
+2024-06-07 01:55:09,642 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,667 - main - INFO - Image converted successfully. Image converted from JPEG to TIFF
+2024-06-07 01:55:09,667 - main - INFO - File successfully saved at: temp_images/test_09550107062024.tiff
+2024-06-07 01:55:09,667 - main - INFO - Response status: 200
+2024-06-07 01:55:09,700 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,743 - main - INFO - Image converted successfully. Image converted from JPEG to WEBP
+2024-06-07 01:55:09,743 - main - INFO - File successfully saved at: temp_images/test_09550107062024.webp
+2024-06-07 01:55:09,744 - main - INFO - Response status: 200
+2024-06-07 01:55:09,795 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:09,825 - main - INFO - Image converted successfully. Image converted from JPEG to BMP
+2024-06-07 01:55:09,825 - main - INFO - File successfully saved at: temp_images/test_09550107062024.bmp
+2024-06-07 01:55:09,826 - main - INFO - Response status: 200
+2024-06-07 01:55:09,886 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:10,029 - main - INFO - Image converted successfully. Image converted from JPEG to GIF
+2024-06-07 01:55:10,030 - main - INFO - File successfully saved at: temp_images/test_09550107062024.gif
+2024-06-07 01:55:10,031 - main - INFO - Response status: 200
+2024-06-07 01:55:10,057 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:10,135 - main - INFO - Image converted successfully. Image converted from JPEG to ICO
+2024-06-07 01:55:10,135 - main - INFO - File successfully saved at: temp_images/test_10550107062024.ico
+2024-06-07 01:55:10,136 - main - INFO - Response status: 200
+2024-06-07 01:55:10,150 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:10,164 - main - INFO - Image converted successfully. Image converted from JPEG to JPEG
+2024-06-07 01:55:10,164 - main - INFO - File successfully saved at: temp_images/test_10550107062024.jpeg
+2024-06-07 01:55:10,165 - main - INFO - Response status: 200
+2024-06-07 01:55:10,179 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:10,227 - main - INFO - Image converted successfully. Image converted from JPEG to PCX
+2024-06-07 01:55:10,227 - main - INFO - File successfully saved at: temp_images/test_10550107062024.pcx
+2024-06-07 01:55:10,228 - main - INFO - Response status: 200
+2024-06-07 01:55:10,304 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:10,530 - main - INFO - Image converted successfully. Image converted from JPEG to PNG
+2024-06-07 01:55:10,530 - main - INFO - File successfully saved at: temp_images/test_10550107062024.png
+2024-06-07 01:55:10,531 - main - INFO - Response status: 200
+2024-06-07 01:55:10,784 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:10,835 - main - INFO - Image converted successfully. Image converted from JPEG to PPM
+2024-06-07 01:55:10,835 - main - INFO - File successfully saved at: temp_images/test_10550107062024.ppm
+2024-06-07 01:55:10,836 - main - INFO - Response status: 200
+2024-06-07 01:55:10,899 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:10,954 - main - INFO - Image converted successfully. Image converted from JPEG to SGI
+2024-06-07 01:55:10,954 - main - INFO - File successfully saved at: temp_images/test_10550107062024.sgi
+2024-06-07 01:55:10,955 - main - INFO - Response status: 200
+2024-06-07 01:55:11,017 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:11,075 - main - INFO - Image converted successfully. Image converted from JPEG to TIFF
+2024-06-07 01:55:11,075 - main - INFO - File successfully saved at: temp_images/test_11550107062024.tiff
+2024-06-07 01:55:11,076 - main - INFO - Response status: 200
+2024-06-07 01:55:11,140 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:11,199 - main - INFO - Image converted successfully. Image converted from JPEG to TIFF
+2024-06-07 01:55:11,199 - main - INFO - File successfully saved at: temp_images/test_11550107062024.tiff
+2024-06-07 01:55:11,200 - main - INFO - Response status: 200
+2024-06-07 01:55:11,265 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:11,340 - main - INFO - Image converted successfully. Image converted from JPEG to WEBP
+2024-06-07 01:55:11,340 - main - INFO - File successfully saved at: temp_images/test_11550107062024.webp
+2024-06-07 01:55:11,341 - main - INFO - Response status: 200
+2024-06-07 01:55:11,400 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:11,582 - main - INFO - Image converted successfully. Image converted from PCX to BMP
+2024-06-07 01:55:11,582 - main - INFO - File successfully saved at: temp_images/test_11550107062024.bmp
+2024-06-07 01:55:11,584 - main - INFO - Response status: 200
+2024-06-07 01:55:11,839 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:12,052 - main - INFO - Image converted successfully. Image converted from PCX to GIF
+2024-06-07 01:55:12,052 - main - INFO - File successfully saved at: temp_images/test_11550107062024.gif
+2024-06-07 01:55:12,053 - main - INFO - Response status: 200
+2024-06-07 01:55:12,107 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:12,360 - main - INFO - Image converted successfully. Image converted from PCX to ICO
+2024-06-07 01:55:12,360 - main - INFO - File successfully saved at: temp_images/test_12550107062024.ico
+2024-06-07 01:55:12,364 - main - INFO - Response status: 200
+2024-06-07 01:55:12,374 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:12,406 - main - INFO - Image converted successfully. Image converted from PCX to JPEG
+2024-06-07 01:55:12,406 - main - INFO - File successfully saved at: temp_images/test_12550107062024.jpeg
+2024-06-07 01:55:12,406 - main - INFO - Response status: 200
+2024-06-07 01:55:12,462 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:12,484 - main - INFO - Image converted successfully. Image converted from PCX to JPEG
+2024-06-07 01:55:12,484 - main - INFO - File successfully saved at: temp_images/test_12550107062024.jpeg
+2024-06-07 01:55:12,484 - main - INFO - Response status: 200
+2024-06-07 01:55:12,534 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:12,685 - main - INFO - Image converted successfully. Image converted from PCX to PNG
+2024-06-07 01:55:12,685 - main - INFO - File successfully saved at: temp_images/test_12550107062024.png
+2024-06-07 01:55:12,686 - main - INFO - Response status: 200
+2024-06-07 01:55:12,897 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:13,088 - main - INFO - Image converted successfully. Image converted from PCX to PPM
+2024-06-07 01:55:13,088 - main - INFO - File successfully saved at: temp_images/test_12550107062024.ppm
+2024-06-07 01:55:13,089 - main - INFO - Response status: 200
+2024-06-07 01:55:13,342 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:13,499 - main - INFO - Image converted successfully. Image converted from PCX to SGI
+2024-06-07 01:55:13,499 - main - INFO - File successfully saved at: temp_images/test_13550107062024.sgi
+2024-06-07 01:55:13,503 - main - INFO - Response status: 200
+2024-06-07 01:55:13,750 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:13,922 - main - INFO - Image converted successfully. Image converted from PCX to TIFF
+2024-06-07 01:55:13,923 - main - INFO - File successfully saved at: temp_images/test_13550107062024.tiff
+2024-06-07 01:55:13,923 - main - INFO - Response status: 200
+2024-06-07 01:55:14,180 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:14,317 - main - INFO - Image converted successfully. Image converted from PCX to TIFF
+2024-06-07 01:55:14,317 - main - INFO - File successfully saved at: temp_images/test_14550107062024.tiff
+2024-06-07 01:55:14,318 - main - INFO - Response status: 200
+2024-06-07 01:55:14,567 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:14,778 - main - INFO - Image converted successfully. Image converted from PCX to WEBP
+2024-06-07 01:55:14,778 - main - INFO - File successfully saved at: temp_images/test_14550107062024.webp
+2024-06-07 01:55:14,779 - main - INFO - Response status: 200
+2024-06-07 01:55:15,026 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:15,119 - main - INFO - Image converted successfully. Image converted from PNG to BMP
+2024-06-07 01:55:15,119 - main - INFO - File successfully saved at: temp_images/test_15550107062024.bmp
+2024-06-07 01:55:15,119 - main - INFO - Response status: 200
+2024-06-07 01:55:15,207 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:15,377 - main - INFO - Image converted successfully. Image converted from PNG to GIF
+2024-06-07 01:55:15,377 - main - INFO - File successfully saved at: temp_images/test_15550107062024.gif
+2024-06-07 01:55:15,378 - main - INFO - Response status: 200
+2024-06-07 01:55:15,403 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:15,512 - main - INFO - Image converted successfully. Image converted from PNG to ICO
+2024-06-07 01:55:15,512 - main - INFO - File successfully saved at: temp_images/test_15550107062024.ico
+2024-06-07 01:55:15,512 - main - INFO - Response status: 200
+2024-06-07 01:55:15,522 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:15,555 - main - INFO - Image converted successfully. Image converted from PNG to JPEG
+2024-06-07 01:55:15,555 - main - INFO - File successfully saved at: temp_images/test_15550107062024.jpeg
+2024-06-07 01:55:15,556 - main - INFO - Response status: 200
+2024-06-07 01:55:15,571 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:15,604 - main - INFO - Image converted successfully. Image converted from PNG to JPEG
+2024-06-07 01:55:15,604 - main - INFO - File successfully saved at: temp_images/test_15550107062024.jpeg
+2024-06-07 01:55:15,605 - main - INFO - Response status: 200
+2024-06-07 01:55:15,619 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:15,674 - main - INFO - Image converted successfully. Image converted from PNG to PCX
+2024-06-07 01:55:15,674 - main - INFO - File successfully saved at: temp_images/test_15550107062024.pcx
+2024-06-07 01:55:15,674 - main - INFO - Response status: 200
+2024-06-07 01:55:15,729 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:15,821 - main - INFO - Image converted successfully. Image converted from PNG to PPM
+2024-06-07 01:55:15,821 - main - INFO - File successfully saved at: temp_images/test_15550107062024.ppm
+2024-06-07 01:55:15,822 - main - INFO - Response status: 200
+2024-06-07 01:55:15,910 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,004 - main - INFO - Image converted successfully. Image converted from PNG to SGI
+2024-06-07 01:55:16,004 - main - INFO - File successfully saved at: temp_images/test_15550107062024.sgi
+2024-06-07 01:55:16,005 - main - INFO - Response status: 200
+2024-06-07 01:55:16,089 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,185 - main - INFO - Image converted successfully. Image converted from PNG to TIFF
+2024-06-07 01:55:16,185 - main - INFO - File successfully saved at: temp_images/test_16550107062024.tiff
+2024-06-07 01:55:16,185 - main - INFO - Response status: 200
+2024-06-07 01:55:16,273 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,359 - main - INFO - Image converted successfully. Image converted from PNG to TIFF
+2024-06-07 01:55:16,359 - main - INFO - File successfully saved at: temp_images/test_16550107062024.tiff
+2024-06-07 01:55:16,359 - main - INFO - Response status: 200
+2024-06-07 01:55:16,437 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,532 - main - INFO - Image converted successfully. Image converted from PNG to WEBP
+2024-06-07 01:55:16,532 - main - INFO - File successfully saved at: temp_images/test_16550107062024.webp
+2024-06-07 01:55:16,533 - main - INFO - Response status: 200
+2024-06-07 01:55:16,626 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,640 - main - INFO - Image converted successfully. Image converted from PPM to BMP
+2024-06-07 01:55:16,640 - main - INFO - File successfully saved at: temp_images/test_16550107062024.bmp
+2024-06-07 01:55:16,641 - main - INFO - Response status: 200
+2024-06-07 01:55:16,656 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,727 - main - INFO - Image converted successfully. Image converted from PPM to GIF
+2024-06-07 01:55:16,727 - main - INFO - File successfully saved at: temp_images/test_16550107062024.gif
+2024-06-07 01:55:16,728 - main - INFO - Response status: 200
+2024-06-07 01:55:16,739 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,768 - main - INFO - Image converted successfully. Image converted from PPM to ICO
+2024-06-07 01:55:16,768 - main - INFO - File successfully saved at: temp_images/test_16550107062024.ico
+2024-06-07 01:55:16,768 - main - INFO - Response status: 200
+2024-06-07 01:55:16,780 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,786 - main - INFO - Image converted successfully. Image converted from PPM to JPEG
+2024-06-07 01:55:16,787 - main - INFO - File successfully saved at: temp_images/test_16550107062024.jpeg
+2024-06-07 01:55:16,787 - main - INFO - Response status: 200
+2024-06-07 01:55:16,794 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,800 - main - INFO - Image converted successfully. Image converted from PPM to JPEG
+2024-06-07 01:55:16,800 - main - INFO - File successfully saved at: temp_images/test_16550107062024.jpeg
+2024-06-07 01:55:16,800 - main - INFO - Response status: 200
+2024-06-07 01:55:16,807 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,823 - main - INFO - Image converted successfully. Image converted from PPM to PCX
+2024-06-07 01:55:16,823 - main - INFO - File successfully saved at: temp_images/test_16550107062024.pcx
+2024-06-07 01:55:16,823 - main - INFO - Response status: 200
+2024-06-07 01:55:16,844 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,899 - main - INFO - Image converted successfully. Image converted from PPM to PNG
+2024-06-07 01:55:16,899 - main - INFO - File successfully saved at: temp_images/test_16550107062024.png
+2024-06-07 01:55:16,900 - main - INFO - Response status: 200
+2024-06-07 01:55:16,976 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:16,989 - main - INFO - Image converted successfully. Image converted from PPM to SGI
+2024-06-07 01:55:16,989 - main - INFO - File successfully saved at: temp_images/test_16550107062024.sgi
+2024-06-07 01:55:16,990 - main - INFO - Response status: 200
+2024-06-07 01:55:17,003 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,017 - main - INFO - Image converted successfully. Image converted from PPM to TIFF
+2024-06-07 01:55:17,017 - main - INFO - File successfully saved at: temp_images/test_17550107062024.tiff
+2024-06-07 01:55:17,017 - main - INFO - Response status: 200
+2024-06-07 01:55:17,032 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,045 - main - INFO - Image converted successfully. Image converted from PPM to TIFF
+2024-06-07 01:55:17,046 - main - INFO - File successfully saved at: temp_images/test_17550107062024.tiff
+2024-06-07 01:55:17,046 - main - INFO - Response status: 200
+2024-06-07 01:55:17,060 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,086 - main - INFO - Image converted successfully. Image converted from PPM to WEBP
+2024-06-07 01:55:17,086 - main - INFO - File successfully saved at: temp_images/test_17550107062024.webp
+2024-06-07 01:55:17,087 - main - INFO - Response status: 200
+2024-06-07 01:55:17,115 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,130 - main - INFO - Image converted successfully. Image converted from SGI to BMP
+2024-06-07 01:55:17,130 - main - INFO - File successfully saved at: temp_images/test_17550107062024.bmp
+2024-06-07 01:55:17,130 - main - INFO - Response status: 200
+2024-06-07 01:55:17,145 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,218 - main - INFO - Image converted successfully. Image converted from SGI to GIF
+2024-06-07 01:55:17,218 - main - INFO - File successfully saved at: temp_images/test_17550107062024.gif
+2024-06-07 01:55:17,218 - main - INFO - Response status: 200
+2024-06-07 01:55:17,230 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,260 - main - INFO - Image converted successfully. Image converted from SGI to ICO
+2024-06-07 01:55:17,261 - main - INFO - File successfully saved at: temp_images/test_17550107062024.ico
+2024-06-07 01:55:17,261 - main - INFO - Response status: 200
+2024-06-07 01:55:17,273 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,280 - main - INFO - Image converted successfully. Image converted from SGI to JPEG
+2024-06-07 01:55:17,281 - main - INFO - File successfully saved at: temp_images/test_17550107062024.jpeg
+2024-06-07 01:55:17,281 - main - INFO - Response status: 200
+2024-06-07 01:55:17,287 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,295 - main - INFO - Image converted successfully. Image converted from SGI to JPEG
+2024-06-07 01:55:17,295 - main - INFO - File successfully saved at: temp_images/test_17550107062024.jpeg
+2024-06-07 01:55:17,296 - main - INFO - Response status: 200
+2024-06-07 01:55:17,302 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,319 - main - INFO - Image converted successfully. Image converted from SGI to PCX
+2024-06-07 01:55:17,319 - main - INFO - File successfully saved at: temp_images/test_17550107062024.pcx
+2024-06-07 01:55:17,319 - main - INFO - Response status: 200
+2024-06-07 01:55:17,340 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,397 - main - INFO - Image converted successfully. Image converted from SGI to PNG
+2024-06-07 01:55:17,397 - main - INFO - File successfully saved at: temp_images/test_17550107062024.png
+2024-06-07 01:55:17,397 - main - INFO - Response status: 200
+2024-06-07 01:55:17,465 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,480 - main - INFO - Image converted successfully. Image converted from SGI to PPM
+2024-06-07 01:55:17,480 - main - INFO - File successfully saved at: temp_images/test_17550107062024.ppm
+2024-06-07 01:55:17,480 - main - INFO - Response status: 200
+2024-06-07 01:55:17,494 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,510 - main - INFO - Image converted successfully. Image converted from SGI to TIFF
+2024-06-07 01:55:17,510 - main - INFO - File successfully saved at: temp_images/test_17550107062024.tiff
+2024-06-07 01:55:17,510 - main - INFO - Response status: 200
+2024-06-07 01:55:17,525 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,539 - main - INFO - Image converted successfully. Image converted from SGI to TIFF
+2024-06-07 01:55:17,540 - main - INFO - File successfully saved at: temp_images/test_17550107062024.tiff
+2024-06-07 01:55:17,540 - main - INFO - Response status: 200
+2024-06-07 01:55:17,554 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,581 - main - INFO - Image converted successfully. Image converted from SGI to WEBP
+2024-06-07 01:55:17,582 - main - INFO - File successfully saved at: temp_images/test_17550107062024.webp
+2024-06-07 01:55:17,582 - main - INFO - Response status: 200
+2024-06-07 01:55:17,621 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,626 - main - INFO - Image converted successfully. Image converted from TIFF to BMP
+2024-06-07 01:55:17,626 - main - INFO - File successfully saved at: temp_images/test_17550107062024.bmp
+2024-06-07 01:55:17,627 - main - INFO - Response status: 200
+2024-06-07 01:55:17,632 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,642 - main - INFO - Image converted successfully. Image converted from TIFF to GIF
+2024-06-07 01:55:17,642 - main - INFO - File successfully saved at: temp_images/test_17550107062024.gif
+2024-06-07 01:55:17,642 - main - INFO - Response status: 200
+2024-06-07 01:55:17,646 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,654 - main - INFO - Image converted successfully. Image converted from TIFF to ICO
+2024-06-07 01:55:17,654 - main - INFO - File successfully saved at: temp_images/test_17550107062024.ico
+2024-06-07 01:55:17,655 - main - INFO - Response status: 200
+2024-06-07 01:55:17,659 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,661 - main - INFO - Image converted successfully. Image converted from TIFF to JPEG
+2024-06-07 01:55:17,661 - main - INFO - File successfully saved at: temp_images/test_17550107062024.jpeg
+2024-06-07 01:55:17,662 - main - INFO - Response status: 200
+2024-06-07 01:55:17,665 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,667 - main - INFO - Image converted successfully. Image converted from TIFF to JPEG
+2024-06-07 01:55:17,667 - main - INFO - File successfully saved at: temp_images/test_17550107062024.jpeg
+2024-06-07 01:55:17,668 - main - INFO - Response status: 200
+2024-06-07 01:55:17,671 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,675 - main - INFO - Image converted successfully. Image converted from TIFF to PCX
+2024-06-07 01:55:17,675 - main - INFO - File successfully saved at: temp_images/test_17550107062024.pcx
+2024-06-07 01:55:17,676 - main - INFO - Response status: 200
+2024-06-07 01:55:17,682 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,704 - main - INFO - Image converted successfully. Image converted from TIFF to PNG
+2024-06-07 01:55:17,704 - main - INFO - File successfully saved at: temp_images/test_17550107062024.png
+2024-06-07 01:55:17,705 - main - INFO - Response status: 200
+2024-06-07 01:55:17,738 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,743 - main - INFO - Image converted successfully. Image converted from TIFF to PPM
+2024-06-07 01:55:17,743 - main - INFO - File successfully saved at: temp_images/test_17550107062024.ppm
+2024-06-07 01:55:17,743 - main - INFO - Response status: 200
+2024-06-07 01:55:17,749 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,753 - main - INFO - Image converted successfully. Image converted from TIFF to SGI
+2024-06-07 01:55:17,753 - main - INFO - File successfully saved at: temp_images/test_17550107062024.sgi
+2024-06-07 01:55:17,754 - main - INFO - Response status: 200
+2024-06-07 01:55:17,759 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,764 - main - INFO - Image converted successfully. Image converted from TIFF to TIFF
+2024-06-07 01:55:17,765 - main - INFO - File successfully saved at: temp_images/test_17550107062024.tiff
+2024-06-07 01:55:17,765 - main - INFO - Response status: 200
+2024-06-07 01:55:17,772 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,780 - main - INFO - Image converted successfully. Image converted from TIFF to WEBP
+2024-06-07 01:55:17,780 - main - INFO - File successfully saved at: temp_images/test_17550107062024.webp
+2024-06-07 01:55:17,780 - main - INFO - Response status: 200
+2024-06-07 01:55:17,789 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,793 - main - INFO - Image converted successfully. Image converted from TIFF to BMP
+2024-06-07 01:55:17,794 - main - INFO - File successfully saved at: temp_images/test_17550107062024.bmp
+2024-06-07 01:55:17,794 - main - INFO - Response status: 200
+2024-06-07 01:55:17,799 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,808 - main - INFO - Image converted successfully. Image converted from TIFF to GIF
+2024-06-07 01:55:17,808 - main - INFO - File successfully saved at: temp_images/test_17550107062024.gif
+2024-06-07 01:55:17,809 - main - INFO - Response status: 200
+2024-06-07 01:55:17,812 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,820 - main - INFO - Image converted successfully. Image converted from TIFF to ICO
+2024-06-07 01:55:17,820 - main - INFO - File successfully saved at: temp_images/test_17550107062024.ico
+2024-06-07 01:55:17,820 - main - INFO - Response status: 200
+2024-06-07 01:55:17,824 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,826 - main - INFO - Image converted successfully. Image converted from TIFF to JPEG
+2024-06-07 01:55:17,826 - main - INFO - File successfully saved at: temp_images/test_17550107062024.jpeg
+2024-06-07 01:55:17,827 - main - INFO - Response status: 200
+2024-06-07 01:55:17,830 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,832 - main - INFO - Image converted successfully. Image converted from TIFF to JPEG
+2024-06-07 01:55:17,832 - main - INFO - File successfully saved at: temp_images/test_17550107062024.jpeg
+2024-06-07 01:55:17,833 - main - INFO - Response status: 200
+2024-06-07 01:55:17,835 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,840 - main - INFO - Image converted successfully. Image converted from TIFF to PCX
+2024-06-07 01:55:17,840 - main - INFO - File successfully saved at: temp_images/test_17550107062024.pcx
+2024-06-07 01:55:17,840 - main - INFO - Response status: 200
+2024-06-07 01:55:17,846 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,868 - main - INFO - Image converted successfully. Image converted from TIFF to PNG
+2024-06-07 01:55:17,868 - main - INFO - File successfully saved at: temp_images/test_17550107062024.png
+2024-06-07 01:55:17,869 - main - INFO - Response status: 200
+2024-06-07 01:55:17,892 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,897 - main - INFO - Image converted successfully. Image converted from TIFF to PPM
+2024-06-07 01:55:17,897 - main - INFO - File successfully saved at: temp_images/test_17550107062024.ppm
+2024-06-07 01:55:17,897 - main - INFO - Response status: 200
+2024-06-07 01:55:17,903 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,906 - main - INFO - Image converted successfully. Image converted from TIFF to SGI
+2024-06-07 01:55:17,906 - main - INFO - File successfully saved at: temp_images/test_17550107062024.sgi
+2024-06-07 01:55:17,907 - main - INFO - Response status: 200
+2024-06-07 01:55:17,911 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,916 - main - INFO - Image converted successfully. Image converted from TIFF to TIFF
+2024-06-07 01:55:17,916 - main - INFO - File successfully saved at: temp_images/test_17550107062024.tiff
+2024-06-07 01:55:17,916 - main - INFO - Response status: 200
+2024-06-07 01:55:17,923 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:17,931 - main - INFO - Image converted successfully. Image converted from TIFF to WEBP
+2024-06-07 01:55:17,931 - main - INFO - File successfully saved at: temp_images/test_17550107062024.webp
+2024-06-07 01:55:17,931 - main - INFO - Response status: 200
+2024-06-07 01:55:17,940 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:18,155 - main - INFO - Image converted successfully. Image converted from WEBP to BMP
+2024-06-07 01:55:18,155 - main - INFO - File successfully saved at: temp_images/test_17550107062024.bmp
+2024-06-07 01:55:18,159 - main - INFO - Response status: 200
+2024-06-07 01:55:18,380 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:18,727 - main - INFO - Image converted successfully. Image converted from WEBP to GIF
+2024-06-07 01:55:18,727 - main - INFO - File successfully saved at: temp_images/test_18550107062024.gif
+2024-06-07 01:55:18,731 - main - INFO - Response status: 200
+2024-06-07 01:55:18,813 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:19,095 - main - INFO - Image converted successfully. Image converted from WEBP to ICO
+2024-06-07 01:55:19,095 - main - INFO - File successfully saved at: temp_images/test_18550107062024.ico
+2024-06-07 01:55:19,100 - main - INFO - Response status: 200
+2024-06-07 01:55:19,113 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:19,194 - main - INFO - Image converted successfully. Image converted from WEBP to JPEG
+2024-06-07 01:55:19,195 - main - INFO - File successfully saved at: temp_images/test_19550107062024.jpeg
+2024-06-07 01:55:19,199 - main - INFO - Response status: 200
+2024-06-07 01:55:19,248 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:19,330 - main - INFO - Image converted successfully. Image converted from WEBP to JPEG
+2024-06-07 01:55:19,330 - main - INFO - File successfully saved at: temp_images/test_19550107062024.jpeg
+2024-06-07 01:55:19,334 - main - INFO - Response status: 200
+2024-06-07 01:55:19,369 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:19,562 - main - INFO - Image converted successfully. Image converted from WEBP to PCX
+2024-06-07 01:55:19,562 - main - INFO - File successfully saved at: temp_images/test_19550107062024.pcx
+2024-06-07 01:55:19,567 - main - INFO - Response status: 200
+2024-06-07 01:55:19,764 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:20,424 - main - INFO - Image converted successfully. Image converted from WEBP to PNG
+2024-06-07 01:55:20,424 - main - INFO - File successfully saved at: temp_images/test_19550107062024.png
+2024-06-07 01:55:20,429 - main - INFO - Response status: 200
+2024-06-07 01:55:21,139 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:21,323 - main - INFO - Image converted successfully. Image converted from WEBP to PPM
+2024-06-07 01:55:21,323 - main - INFO - File successfully saved at: temp_images/test_21550107062024.ppm
+2024-06-07 01:55:21,327 - main - INFO - Response status: 200
+2024-06-07 01:55:21,507 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:21,675 - main - INFO - Image converted successfully. Image converted from WEBP to SGI
+2024-06-07 01:55:21,675 - main - INFO - File successfully saved at: temp_images/test_21550107062024.sgi
+2024-06-07 01:55:21,680 - main - INFO - Response status: 200
+2024-06-07 01:55:21,862 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:22,032 - main - INFO - Image converted successfully. Image converted from WEBP to TIFF
+2024-06-07 01:55:22,032 - main - INFO - File successfully saved at: temp_images/test_21550107062024.tiff
+2024-06-07 01:55:22,036 - main - INFO - Response status: 200
+2024-06-07 01:55:22,240 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 01:55:22,451 - main - INFO - Image converted successfully. Image converted from WEBP to TIFF
+2024-06-07 01:55:22,451 - main - INFO - File successfully saved at: temp_images/test_22550107062024.tiff
+2024-06-07 01:55:22,455 - main - INFO - Response status: 200

@@ -1,0 +1,6 @@
+2024-06-07 00:45:16,446 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 00:45:16,576 - main - INFO - Image converted successfully. Image converted from JPEG to ICO
+2024-06-07 00:45:16,577 - main - INFO - Response status: 200
+2024-06-07 00:45:26,181 - main - INFO - Request: POST http://0.0.0.0:8080/convert/
+2024-06-07 00:45:26,219 - main - INFO - Image converted successfully. Image converted from PNG to ICO
+2024-06-07 00:45:26,219 - main - INFO - Response status: 200

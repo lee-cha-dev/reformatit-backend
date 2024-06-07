@@ -47,3 +47,5 @@ watchfiles==0.21.0
 websockets==12.0
 wrapt==1.16.0
 zipp==3.19.0
+
+requests~=2.32.3
