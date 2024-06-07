@@ -1,0 +1,16 @@
+# Build & Test Docker Image Locally
+docker build -t reformatit-backend .
+docker run -p 8080:8080 reformatit-backend
+
+
+# Push the Docker image to Google Container Registry:
+docker tag reformatit-backend gcr.io/tensile-stack-425502-c6/reformatit-backend
+docker push gcr.io/tensile-stack-425502-c6/reformatit-backend
+
+
+# Deploy the FastAPI backend to Cloud Run:
+gcloud run deploy reformatit-backend \
+  --image gcr.io/tensile-stack-425502-c6/reformatit-backend \
+  --platform managed \
+  --region us-west4 \
+  --allow-unauthenticated

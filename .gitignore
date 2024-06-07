@@ -1,11 +1,17 @@
-notes
-notes/*
+#notes
+#notes/*
 
-test/
+test
 test/*
 
 logs/
 logs/*
+
+temp_images
+temp_images/*
+
+__pycache__
+__pycache__/*
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
