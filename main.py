@@ -1,4 +1,6 @@
 import datetime
+import io
+
 import uvicorn
 import os
 import asyncio
@@ -28,7 +30,7 @@ TEMP_IMAGE_DIR = "temp_images"
 ALLOWED_FORMATS = [
     "BMP",
     "GIF",
-    # "HEIF",
+    "HEIF",
     "ICO",
     "JPEG",
     "JPG",
@@ -44,7 +46,7 @@ ALLOWED_FORMATS = [
 ALLOWED_CONTENT_TYPES = {
     "image/bmp",
     "image/gif",
-    # "image/heif",
+    "image/heif",
     "image/vnd.microsoft.icon",
     "image/jpeg",
     "image/pcx",
@@ -156,15 +158,6 @@ async def convert_image(request: Request, file: UploadFile = File(...), convert_
             raise HTTPException(status_code=400, detail="Invalid conversion format")
 
         # REMOVED CONTENT TYPE CHECK DUE TO ISSUE WITH CONTENT TYPE NOT BEING PASSED OVER.
-        # Log the content type of the uploaded file
-        # content_type = file.content_type
-        # logger.info(f"Uploaded file content type: {content_type}")
-
-        # Check for the correct content-Type Validation
-        # if file.content_type not in ALLOWED_CONTENT_TYPES:
-        #     logger.info("Invalid file type")
-        #     print(f"Invalid File Type: {file.content_type}")
-        #     raise HTTPException(status_code=400, detail="Invalid file type")
 
         ######################################################
         # Cybersecurity policies end here
@@ -175,43 +168,60 @@ async def convert_image(request: Request, file: UploadFile = File(...), convert_
         # Wrap image conversion logic in async method to enable timeout
         async def get_output_path(convert_img_to: str):
             try:
-                # Correct format strings for certain formats
-                convert_img_to_corrected = {
-                    "JPG": "JPEG",
-                    "TIF": "TIFF"
-                }.get(convert_img_to.upper(), convert_img_to.upper())
+                if convert_img_to.upper() == "HEIF":
+                    # Separate handling for HEIF conversion
+                    input_path = os.path.join(TEMP_IMAGE_DIR, file.filename)
+                    with open(input_path, "wb") as f:
+                        f.write(contents)
 
-                # Open and convert the image
-                img = Image.open(file.file)
-                old_format = img.format
-                img = img.convert("RGB")
+                    img = Image.open(input_path)
+                    if img.mode != "RGB":
+                        img = img.convert("RGB")
 
-                # Ensure temp_images dir exists
-                output_dir = "temp_images/"
-                os.makedirs(output_dir, exist_ok=True)
+                    heif_file = pillow_heif.from_pillow(img)
 
-                # Generate a timestamp
-                timestamp = datetime.datetime.now().strftime("%S%M%H%d%m%Y")
-                base_name = os.path.splitext(file.filename)[0]
-                new_filename = f"{base_name}_{timestamp}.{convert_img_to_corrected.lower()}"
+                    output_dir = "temp_images/"
+                    os.makedirs(output_dir, exist_ok=True)
 
-                # Save the image to the temporary image directory
-                out_path = os.path.join(output_dir, new_filename)
+                    timestamp = datetime.datetime.now().strftime("%S%M%H%d%m%Y")
+                    base_name = os.path.splitext(file.filename)[0]
+                    new_filename = f"{base_name}_{timestamp}.heif"
+                    out_path = os.path.join(output_dir, new_filename)
 
-                img.save(out_path, format=convert_img_to_corrected)
-                # Ensure ICO is not saved as a compressed ICON
-                # if convert_img_to_corrected == "ICO":
-                #     size = img.size
-                #     ico = Image.new(mode="RGBA", size=(max(size), max(size)), color=(0, 0, 0, 0))
-                #     ico.paste(img, (int((max(size) - size[0]) / 2), int((max(size) - size[1]) / 2)))
-                #     ico.save(out_path, format='ICO', quality=100)
-                #     print(f"ICO WAS SAVED TO: {out_path}")
-                # else:
-                #     img.save(out_path, format=convert_img_to_corrected)
+                    heif_file.save(out_path, quality=95)
 
-                logger.info(
-                    f"Image converted successfully. Image converted from {old_format} to {convert_img_to_corrected}")
-                print(f"Output path: {out_path}")
+                    logger.info("Image converted successfully to HEIF")
+
+                    # General handling for all other formats
+                else:
+                    # Correct format strings for certain formats
+                    convert_img_to_corrected = {
+                        "JPG": "JPEG",
+                        "TIF": "TIFF"
+                    }.get(convert_img_to.upper(), convert_img_to.upper())
+
+                    # Open and convert the image
+                    img = Image.open(file.file)
+                    old_format = img.format
+                    img = img.convert("RGB")
+
+                    # Ensure temp_images dir exists
+                    output_dir = "temp_images/"
+                    os.makedirs(output_dir, exist_ok=True)
+
+                    # Generate a timestamp
+                    timestamp = datetime.datetime.now().strftime("%S%M%H%d%m%Y")
+                    base_name = os.path.splitext(file.filename)[0]
+                    new_filename = f"{base_name}_{timestamp}.{convert_img_to_corrected.lower()}"
+
+                    # Save the image to the temporary image directory
+                    out_path = os.path.join(output_dir, new_filename)
+
+                    img.save(out_path, format=convert_img_to_corrected)
+
+                    logger.info(
+                        f"Image converted successfully. Image converted from {old_format} to {convert_img_to_corrected}")
+                    print(f"Output path: {out_path}")
 
                 # Debug statement to verify path
                 if not os.path.exists(out_path):
