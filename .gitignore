@@ -1,8 +1,9 @@
 #notes
 #notes/*
 
-test
-test/*
+test/logs/
+test/test_images/
+test/test_images_converted/
 
 logs/
 logs/*
