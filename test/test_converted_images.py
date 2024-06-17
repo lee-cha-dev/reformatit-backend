@@ -20,6 +20,8 @@ if log_file_path:
 file_handler = logging.FileHandler(log_file_path)
 stream_handler = logging.StreamHandler()
 
+stream_handler.setLevel(logging.ERROR)
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -85,18 +87,15 @@ def convert_image(url, file_path, convert_to):
 
 def test_conversion(server_url):
     for src_format in ALLOWED_FORMATS:
-        print("-------------------------------------------------------------------------------------------------------")
+        format_passed = False
+        failed_messages = []
         test_image_path = f"test_images/test.{src_format.lower()}"
         logger.info(f"Image path: {test_image_path}")
-        print("***********************************************************")
         for dest_format in ALLOWED_FORMATS:
             if src_format != dest_format:
-                # logger.info(f"Testing conversion from {src_format} to {dest_format}")
-                # print(f"Testing conversion from {src_format} to {dest_format}")
-
+                logger.info(f"Testing conversion from {src_format} to {dest_format}")
                 converted_image_data = convert_image(server_url, test_image_path, dest_format)
                 if converted_image_data:
-                    # Save and verify the converted image
                     # Save and verify the converted image
                     if dest_format.upper() == "HEIF":
                         # Save the HEIF image using pillow_heif
@@ -107,8 +106,6 @@ def test_conversion(server_url):
                         with open(converted_image_path, 'wb') as out_file:
                             out_file.write(converted_image_data)
                         logger.info(f"Successfully converted {src_format} to {dest_format}")
-                        print(f"Successfully converted {src_format} to {dest_format}")
-                        print("***********************************************************")
                     else:
                         converted_image = Image.open(BytesIO(converted_image_data))
                         output_dir = "test_images_converted"
@@ -131,11 +128,19 @@ def test_conversion(server_url):
                         # Verify the conversion
                         if converted_image.format == save_format:
                             logger.info(f"Successfully converted {src_format} to {save_format}")
-                            print(f"Successfully converted {src_format} to {save_format}")
+                            format_passed = True
                         else:
                             logger.error(f"Conversion from {src_format} to {save_format} failed")
-                            print(f"Conversion from {src_format} to {save_format} failed")
-                        print("***********************************************************")
+                            format_passed = False
+                            failed_messages.append(f"Conversion from {src_format} to {save_format} failed")
+        if format_passed:
+            print(f"Format {src_format} passed.")
+        else:
+            print("*******************************************************")
+            print(f"Format {src_format} failed.")
+            for message in failed_messages:
+                print(message)
+            print("*******************************************************")
 
 
 def main():
