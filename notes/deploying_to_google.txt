@@ -4,13 +4,13 @@ docker run -p 8080:8080 reformatit-backend
 
 
 # Push the Docker image to Google Container Registry:
-docker tag reformatit-backend gcr.io/tensile-stack-425502-c6/reformatit-backend
-docker push gcr.io/tensile-stack-425502-c6/reformatit-backend
+docker tag reformatit-backend gcr.io/reformatit/reformatit-backend
+docker push gcr.io/reformatit/reformatit-backend
 
 
 # Deploy the FastAPI backend to Cloud Run:
 gcloud run deploy reformatit-backend \
-  --image gcr.io/tensile-stack-425502-c6/reformatit-backend \
+  --image gcr.io/reformatit/reformatit-backend \
   --platform managed \
-  --region us-west4 \
+  --region us-central1 \
   --allow-unauthenticated

@@ -16,15 +16,44 @@ from fastapi.middleware.cors import CORSMiddleware
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 
+# New imports for document conversion
+from docx import Document
+from docx2pdf import convert
+from odf.opendocument import load
+from odf.text import P
+from PyPDF2 import PdfReader, PdfWriter
+
+# IMPORTANT TO NOTE THAT THIS THE DOCX CONVERTER NEEDS A REPLACEMENT AS:
+# "2024-06-26 22:39:34,298 - main - ERROR - Error during document conversion: docx2pdf is not implemented for linux as
+# it requires Microsoft Word to be installed"
+# IS THE ERROR PROVIDED. LIBREOFFICE DOES NOT COME INSTALLED ON UBUNTU SO IT IS A POOR CHOICE ON THE UBUNTU SERVER
+
 # INIT APP -
 app = FastAPI()
 
+# ... (keep all the existing imports and configurations)
 # Consts
+# Add these new constants for document conversion
+ALLOWED_DOC_FORMATS = ["PDF", "DOCX", "ODT", "TXT", "RTF"]
+ALLOWED_DOC_CONTENT_TYPES = {
+    "application/pdf",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/vnd.oasis.opendocument.text",
+    "text/plain",
+    "application/rtf"
+}
+MAX_DOC_FILE_SIZE = 10 * 1024 * 1024  # 10 MB
+TEMP_DOC_DIR = "temp_documents"
+if not os.path.exists(TEMP_DOC_DIR):
+    os.makedirs(TEMP_DOC_DIR, exist_ok=True)
+
 MAX_FILE_SIZE = 10 * 1024 * 1024
 DELETE_IMG_AFTER_SECONDS = 3600  # FOR PROD -> clears images every hour on the server via coroutine
 # DELETE_IMG_AFTER_SECONDS = 60  # FOR DEV
 TIMEOUT_IMG = 10  # TIMEOUT FOR SERVER REQUESTS
 TEMP_IMAGE_DIR = "temp_images"
+if not os.path.exists(TEMP_IMAGE_DIR):
+    os.makedirs(TEMP_IMAGE_DIR, exist_ok=True)
 
 # Allowed image formats/types
 ALLOWED_FORMATS = [
@@ -246,6 +275,108 @@ async def convert_image(request: Request, file: UploadFile = File(...), convert_
     except asyncio.TimeoutError:
         logger.error(f"Timeout while converting image")
         raise HTTPException(status_code=504, detail="Timeout while converting image")
+
+
+@app.post("/convert-document/")
+@limiter.limit("5/minute")
+async def convert_document(request: Request, file: UploadFile = File(...), convert_to: str = Form(...)):
+    try:
+        # Check if file size is within limit
+        contents = await file.read()
+        if len(contents) > MAX_DOC_FILE_SIZE:
+            logger.warning(f"Document too large: {len(contents)}")
+            raise HTTPException(status_code=413, detail="Document too large")
+
+        # Check for the correct format
+        if convert_to.upper() not in ALLOWED_DOC_FORMATS:
+            logger.info("Invalid document conversion format")
+            raise HTTPException(status_code=400, detail="Invalid document conversion format")
+
+        # Reset the file pointer after reading contents
+        file.file.seek(0)
+
+        # Wrap document conversion logic in async method to enable timeout
+        async def convert_doc():
+            try:
+                input_path = os.path.join(TEMP_DOC_DIR, file.filename)
+                with open(input_path, "wb") as f:
+                    f.write(contents)
+
+                timestamp = datetime.datetime.now().strftime("%S%M%H%d%m%Y")
+                base_name = os.path.splitext(file.filename)[0]
+                new_filename = f"{base_name}_{timestamp}.{convert_to.lower()}"
+                output_path_doc = os.path.join(TEMP_DOC_DIR, new_filename)
+
+                # Determine input format
+                input_format = os.path.splitext(file.filename)[1][1:].upper()
+
+                # Perform conversion based on input and output formats
+                if input_format == "DOCX" and convert_to.upper() == "PDF":
+                    convert(input_path, output_path_doc)
+                elif input_format == "PDF" and convert_to.upper() == "DOCX":
+                    pdf = PdfReader(input_path)
+                    doc = Document()
+                    for page in pdf.pages:
+                        doc.add_paragraph(page.extract_text())
+                    doc.save(output_path_doc)
+                elif input_format == "ODT" and convert_to.upper() in ["DOCX", "PDF", "TXT"]:
+                    doc = load(input_path)
+                    if convert_to.upper() == "DOCX":
+                        docx = Document()
+                        for element in doc.getElementsByType(P):
+                            docx.add_paragraph(str(element))
+                        docx.save(output_path_doc)
+                    elif convert_to.upper() == "PDF":
+                        # First convert to DOCX, then to PDF
+                        temp_docx = os.path.join(TEMP_DOC_DIR, f"temp_{timestamp}.docx")
+                        docx = Document()
+                        for element in doc.getElementsByType(P):
+                            docx.add_paragraph(str(element))
+                        docx.save(temp_docx)
+                        convert(temp_docx, output_path_doc)
+                        os.remove(temp_docx)
+                    elif convert_to.upper() == "TXT":
+                        with open(output_path_doc, 'w', encoding='utf-8') as f:
+                            for element in doc.getElementsByType(P):
+                                f.write(str(element) + '\n')
+                elif convert_to.upper() == "TXT":
+                    # For any format to TXT, we'll use a simple text extraction
+                    if input_format == "PDF":
+                        pdf = PdfReader(input_path)
+                        with open(output_path_doc, 'w', encoding='utf-8') as f:
+                            for page in pdf.pages:
+                                f.write(page.extract_text())
+                    elif input_format in ["DOCX", "RTF"]:
+                        doc = Document(input_path)
+                        with open(output_path_doc, 'w', encoding='utf-8') as f:
+                            for para in doc.paragraphs:
+                                f.write(para.text + '\n')
+                else:
+                    raise ValueError(f"Conversion from {input_format} to {convert_to} is not supported.")
+
+                logger.info(f"Document converted successfully to {convert_to}")
+
+                if not os.path.exists(output_path_doc):
+                    raise Exception(f"Failed to save the document. Path does not exist: {output_path_doc}")
+
+                if os.path.exists(output_path_doc) and os.path.getsize(output_path_doc) > 0:
+                    logger.info(f"Document successfully saved at: {output_path_doc}")
+                else:
+                    logger.error(f"Document was not saved correctly at: {output_path_doc}")
+                    raise Exception(f"Document was not saved correctly at: {output_path_doc}")
+
+                return output_path_doc
+            except Exception as e:
+                logger.error(f"Error during document conversion: {e}")
+                raise HTTPException(status_code=500, detail=str(e))
+
+        # Get the output path with an expected timeout for the server request.
+        output_path = await asyncio.wait_for(convert_doc(), timeout=TIMEOUT_IMG)
+
+        return FileResponse(output_path, media_type=f"application/{convert_to.lower()}")
+    except asyncio.TimeoutError:
+        logger.error(f"Timeout while converting document")
+        raise HTTPException(status_code=504, detail="Timeout while converting document")
 
 
 if __name__ == "__main__":
